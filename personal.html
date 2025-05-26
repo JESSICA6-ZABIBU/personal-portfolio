@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>personal portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-<body class= "bg-gray-300 text-black text-xl ">
+<body class="bg-gray-300 text-black text-base">
 
-    <header class="flex justify-between p-2" >
-        <div> 
-            <h3>madelyn tarff</h3>
+  <header class="flex justify-between items-center p-4">
+    <div>
+      <h3 class="text-xl font-bold">madelyn tarff</h3>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <nav class="hidden md:flex gap-6 text-lg">
+        <a href="#" class="hover:underline">about</a>
+        <a href="#" class="hover:underline">projects</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <i class="bi bi-list text-3xl"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="p-4">
+      <h1 class="text-3xl font-bold mb-6">about me</h1>
+
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <div class="max-w-xl">
+          <p class="mb-4">
+            nisl acru, scelerisque neque ut. Tincidunt amet, temor
+            du tortor neque auctor dis ipsum. Pretium cras amet
+            odio amet eleifend id sed cras sed.
+            Aliquet risus posuere aliquiet imperdiets sit
+          </p>
+          <button class="bg-yellow-400 px-6 py-2 rounded-md hover:bg-yellow-500">resume</button>
         </div>
 
-        <div class="">
-           
-            <div class=" hidden md:flex items-center justify-between gap-8 flex justify-between  hover:online">
-               
-                <div>
-                    <a href="#">about</a>
-                </div>
-    
-                <div>
-                    <a href="#">projects</a>
-                </div>
-    
-                <div>
-                    <a href="#">Contact</a>
-                </div>
-    
-            </div>
+        <img src="images/bg-2.png" alt="" class="w-full max-w-xs lg:max-w-sm h-auto" />
+      </div>
+    </section>
 
-            <div>
-                <i class="md:hidden bi-list text-4xl"></i>
-            </div>
-            
+    <footer class="p-4">
+      <div class="mb-6">
+        <h1 class="text-3xl font-bold mb-4">projects</h1>
+      </div>
+
+      <form class="flex flex-col gap-4 max-w-xl" action="">
+        <div>
+          <p class="mb-1">Name</p>
+          <input class="w-full bg-white px-4 py-2 rounded-md" type="text" />
         </div>
-    </header>
 
-    <main>
+        <div>
+          <p class="mb-1">Email</p>
+          <input class="w-full bg-white px-4 py-2 rounded-md" type="email" required />
+        </div>
 
-        <section class="hero-section md:w-140 h-auto p-2 r">
+        <div>
+          <p class="mb-1">Message</p>
+          <textarea class="w-full bg-white px-4 py-2 rounded-md min-h-[100px]" name="message"></textarea>
+        </div>
 
-            <h1 class="text-4xl ">about me</h1>
+        <button type="submit" class="bg-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-500 self-start">
+          send
+        </button>
+      </form>
 
-            <div class="md:justify-center justify-between gap-2">
+      <div class="flex items-center gap-4 mt-6">
+        <i class="bi bi-facebook text-2xl"></i>
+        <i class="bi bi-instagram text-2xl"></i>
+        <i class="bi bi-envelope text-2xl"></i>
+      </div>
 
-                <div class="">
-                     <p class="">nisl acru, scelerisque neque ut. Tincidunt amet,temor 
-                        du tortor neque auctor dis ipsum. Pretium cras amet 
-                        odio amet eleifend id sed cras sed.
-                        Aliquet risus posuere aliquiet imperdiets sit 
-                     </p>
-                     
-                     <button class="bg-yellow-400 my-4 px-4 py-2 rounded-md ">resume</button>
+      <p class="mt-4 text-sm">madelyn tarff 2023</p>
+      <img src="images/Vector.png" class="w-full mt-4" alt="">
+    </footer>
+  </main>
 
-                </div>
-
-                <img class="md: w-80 h-auto mx-6 justify-center" src="images/bg-2.png" alt="">
-                
-            </div>
-        </section>
-
-        <footer>
-
-            <div class="md: p-2">
-                <div>
-                    <h1  class="text-4xl " >
-                        projects
-                    </h1>
-                </div>
-                <form class="justify-between justify-center items-center"action="">
-                    <p class=>Name</p>
-                    <input class=" bg-white px-4 py-2 rounded-md" type="Name" >
-                    <p>Email</p>
-                    <input class=" bg-white px-4 py-2 rounded-md" type="Email"required>
-                    <p>Message</p>
-                    <input class=" bg-white px-4 py-30 rounded-md" type="Message">
-    
-                    <button type="submit" class="bg-yellow-400 mx-62 my-2 px-2 py-2 rounded-md ">send</button>
-                </form>
-    
-                <div class=" md: items-center gap-4">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-envelope"></i>
-                </div>
-                <p class="">madelyn tarff 2023</p>
-
-            </div>
-            <img src="images/Vector.png" class="full " alt="">
-
-        </footer>
-    </main>
-    
 </body>
 </html>
